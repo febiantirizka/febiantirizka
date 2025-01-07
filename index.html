@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Seni</title>
+    <style>
+        /* Gaya Umum */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Galeri */
+        .gallery-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeri Seni</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="gallery-container">
+            <h2>Galeri Kami</h2>
+            <div class="gallery">
+                <img src="img/karya seni.jpg" alt="Seni 1">
+                <img src="img/lukis.jpg" alt="Seni 2">
+                <img src="img/wayang.jpg" alt="Seni 3">
+                <img src="img/seni.jpg" alt="Seni 4">
+                <img src="img/ppp.jpg" alt="Seni 5">
+                <img src="img/oooooooooo.jpg" alt="Seni 6">
+            </div>
+        </section>
+
+        <section id="about" class="gallery-container">
+            <h2>Tentang Kami</h2>
+            <p>Galeri Seni adalah platform yang didedikasikan untuk memperkenalkan karya seni dari berbagai seniman berbakat. Kami percaya bahwa seni adalah bahasa universal yang dapat menghubungkan kita semua.</p>
+        </section>
+
+        <section id="contact" class="gallery-container">
+            <h2>Kontak Kami</h2>
+            <p>Email:febianti@gmail.com</p>
+            <p>Telepon: +62 0895-4229-27988</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Galeri Seni. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
